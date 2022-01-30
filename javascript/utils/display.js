@@ -52,3 +52,17 @@ function showScores(){
       let quizElement = document.getElementById("contentt");
       quizElement.innerHTML = quizEndHTML;
 }
+
+//Highlights selected answer
+function highlightAnswer(answerButton){
+  let parentDiv = answerButton.parentElement
+  for(let child of parentDiv.children){
+    child.classList.remove("highlight")
+  }
+  answerButton.classList.add("highlight")
+}
+
+//Resets all answers to unghighlighted
+function resetHighlight(button){
+  button.classList.remove("highlight")
+}
