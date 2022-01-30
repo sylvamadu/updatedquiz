@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/css/style.css">
+    <title>home</title>
+</head>
+<body>
+    <div class="container" id="contentt">
+        <h2>Quiz Application</h2>
+        <div class="content">
+            <div id="timingalert" style="text-align: center;"></div>
+            <div class="top_section">
+                <div class="question_number_status">
+                    <span id="question_status">Question 1 of 5</span>
+                </div>
+                <div class="timer">
+                   <p> <span id="timer_status"></span></p> 
+                </div>
+            </div>
+            <div class="question_area" id="question-area">
+                <span id="question_text">
+                    <!-- questions are loaded here -->
+                    What is the React Framework
+                </span>
+                <div class="option_area" id="options">
+                    <!-- options are loaded here -->
+                    <button id="btn0">A. <span id="choice0"></span></button>
+                    <button id="btn1">B. <span id="choice1"></span></button>
+                    <button id="btn2">C. <span id="choice2"></span></button>
+                    <button id="btn3">D. <span id="choice3"></span></button>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="btn btn-prev" id="prev">Prev</button>
+                <button class="btn btn-next" id="next">Next</button>
+                <button class="btn btn-submit" id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

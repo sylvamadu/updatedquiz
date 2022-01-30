@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: tahoma;
+}
+
+body {
+  background: linear-gradient(to right, #F6490F, #F27813, #EF9614);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  border-radius: .5em;
+  width: 50%;
+  height: 500px;
+  background: white;
+  padding: 2em;
+}
+
+@media screen and (min-width: 150px) and (max-width: 450px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.container .content {
+  margin: 1.5em 0;
+}
+
+.container .content .top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .content .question_area {
+  margin: 1em 0;
+}
+
+.container .content .question_area #question_text {
+  margin: 1em 0;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.container .content .question_area .option_area {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .content .question_area .option_area button {
+  width: 100%;
+  text-align: left;
+  padding: .5em 0;
+  margin: .5em 0;
+  font-size: 1em;
+  font-weight: 700;
+  cursor: pointer;
+  padding-left: 1em !important;
+}
+
+.container .content .question_area .option_area button:hover {
+  background: #1e971e;
+}
+
+.container .content .controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .content .controls button {
+  padding: .8em 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 0 .5em;
+}
+
+.button {
+  margin-top: .5em;
+  padding: .6em 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 0 .5em;
+}
+
+.hide {
+  display: none;
+}
+
+.active {
+  background: black;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
