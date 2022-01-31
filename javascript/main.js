@@ -22,11 +22,14 @@ submitBtn.addEventListener("click", (event) => {
 });
 
 //Guess fxn
-function guess(id,guess){
+function guess(id, answer){
     let button = document.getElementById(id);
+    resetHighlight(button)
+    // let parent = button.parentElement
     button.onclick = function(){
-       quiz.guess(guess);
-       displayQuestion(); 
+        highlightAnswer(button)
+        quiz.guess(answer);
+        // displayQuestion();
     }
 }
 
